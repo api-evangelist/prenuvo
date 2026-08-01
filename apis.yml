@@ -1,8 +1,30 @@
 aid: prenuvo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/prenuvo.png
 name: Prenuvo
-description: Prenuvo is a company surfaced as a portfolio company of felicis, forerunner-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Prenuvo operates a preventive healthcare screening service built around
+  whole-body MRI imaging paired with blood biomarker panels and personalized
+  results reviews. A single scan captures on the order of a billion data points
+  while screening for hundreds of conditions across major organ systems, without
+  radiation or contrast agents, and completes in under an hour. Blood panels
+  measure 80+ biomarkers tied to inflammation, hormone levels, and metabolic
+  health, with optional advanced imaging for brain, heart, and body composition.
+  Prenuvo runs clinics across the US, Canada, Australia, and the UK, and works
+  with research institutions including Mount Sinai, UCLA, Johns Hopkins,
+  Stanford, and Penn. Prenuvo does not currently publish a public developer API,
+  developer portal, or SDKs; this profile captures its public identity and
+  domain-security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/prenuvo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +35,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Healthcare
+- Medical Imaging
+- MRI
+- Preventive Health
+- Diagnostics
+- Biomarkers
+- Wellness
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +53,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/prenuvo-domain-security.yml
 - type: Website
   url: https://prenuvo.com
+- type: Blog
+  url: https://prenuvo.com/blog
+- type: Pricing
+  url: https://prenuvo.com/what-we-offer
+- type: TermsOfService
+  url: https://prenuvo.com/terms-and-privacy?section=terms-of-service
+- type: PrivacyPolicy
+  url: https://prenuvo.com/terms-and-privacy?section=privacy-notice
+- type: Login
+  url: https://prenuvo.com/login
+- type: SignUp
+  url: https://prenuvo.com/book
+- type: Support
+  url: https://prenuvo.com/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
